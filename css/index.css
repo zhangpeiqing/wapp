@@ -1,0 +1,633 @@
+*{margin: 0;padding: 0;}
+html{ font-family: "Microsoft YaHei"; color:#333; font-size:100px;}
+html,body{width:100%;min-width:7.2rem;height:100%;}
+li{ list-style:none; }
+a{ text-decoration:none; color:#333; }
+a img{ border:0; }
+img{ vertical-align:middle;}
+table{border-collapse:collapse;border-spacing:0;}
+.clear{ *zoom:1; }
+.clear:after{ content:""; display:block; clear:both; }
+.fl{float: left}
+.fr{float: right}
+input {/*-webkit-appearance:none;*/outline: none}
+.main{width: 7.2rem;margin: 0 auto}
+.zg-wrap{margin: 0 auto;width: 7.2rem;}
+
+.zg_header{
+    height:0.5rem;
+    background: #1b1b1b;
+    overflow: hidden;
+}
+.zg_header .h1{
+    float: left;
+    margin-left:0.1rem;
+    text-indent: -999rem;
+    width:2.05rem;
+    height:0.5rem;
+    background: url("../images/m1.jpg") no-repeat center;
+    -webkit-background-size: 2.05rem;
+    background-size: 2.05rem;
+}
+.zg_header p{
+    float: right;
+    margin-right: 0.1rem;
+}
+.zg_header p a{
+    display: block;
+    padding-left:0.4rem;
+    font: bold 0.16rem/0.5rem 'Microsoft YaHei';
+    color: #fff;
+}
+.zg_header p:nth-child(2) a{
+    background: url("../images/m2.jpg") no-repeat left center;
+    -webkit-background-size: 0.23rem;
+    background-size: 0.23rem;
+}
+.zg_header p:nth-child(3) a{
+    background: url("../images/m3.jpg") no-repeat left center;
+    -webkit-background-size: 0.3rem;
+    background-size: 0.3rem;
+}
+/*footer*/
+.foot{
+    position: fixed;
+    bottom:0;
+    width:7.2rem;
+    height:0.66rem;
+    background: #242424;
+    overflow: hidden;
+    z-index:999;
+}
+.foot a{
+    float: left;
+    width:3.2rem;
+    font:0.22rem/0.66rem 'Microsoft YaHei';
+    text-align: center;
+    padding-left:0.4rem;
+}
+.foot a:first-child{
+    color: #fff;
+}
+.foot a:first-child img {
+    width: .28rem;
+    margin-right: .1rem;
+}
+.foot a:last-child{
+    color: #ff3334;
+    background: #f2f2f2;
+}
+.foot a:last-child img {
+    width: .35rem;
+    margin-right: .1rem;
+}
+
+
+/*m_banner*/
+.mban {
+    width: 7.2rem;
+    height: 2.73rem;
+    background: url(../images/ban.jpg) no-repeat center top;
+    -webkit-background-size: 7.2rem;
+    background-size: 7.2rem;
+    position: relative;
+}
+.mban h1 {
+    text-indent: -9999px;
+}
+/*m_01*/
+.ht {
+    width: 7.2rem;
+    height: 2.33rem;
+    background: url(../images/ht.jpg) no-repeat center;
+    -webkit-background-size: 7.2rem;
+    background-size: 7.2rem;
+}
+.ht h2 {
+    font:400 .23rem/.23rem "microsoft yahei";
+    color:#fff;
+    text-align: center;
+    padding-top: .8rem;
+    margin-bottom: .27rem;
+}
+.ht p {
+    font:400 .4rem/.4rem "microsoft yahei";
+    color:#fff;
+    text-align: center;
+    margin-bottom: .1rem;
+}
+.ht p.b {
+    font-size:.14rem;
+    line-height: .2rem;
+}
+
+/*m2*/
+.m1 {
+    width: 7.2rem;
+    height: 5.59rem;
+    background: url(../images/zgm1.jpg) no-repeat center;
+    -webkit-background-size: 7.2rem;
+    background-size: 7.2rem;
+}
+.asd {
+    width: 3.9rem;
+    height: 1.45rem;
+    padding-top: .9rem;
+    margin-left: 3.4rem;
+}
+.zmp1 {
+    font: 700 .3rem "microsoft yahei";
+    color: #008e74;
+    letter-spacing: .01rem;
+    margin-bottom: .1rem;
+    text-shadow: .03rem .05rem .1rem rgba(0,142,116,0.5);
+}
+.zmp2 {
+    font: 700 .27rem/.27rem "microsoft yahei";
+    color: #8a8275;
+    margin-bottom: .1rem;
+}
+.bmrk {
+    display: block;
+    width: 1.18rem;
+    height: .32rem;
+    border: 1px solid #008e74;
+    font: 700 .22rem/.32rem "microsoft yahei";
+    color: #008e74;
+    text-align: center;
+    text-shadow: .03rem .05rem .1rem rgba(0,0,0,0.3);
+    border-radius: .16rem;
+    transition: 0.3s;
+}
+.heib {
+    width: 6.34rem;
+    height: 2.76rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-left: .43rem;
+    margin-top: .2rem;
+}
+.heib dd {
+    flex: 1;
+}
+.heib dd p.t {
+    font: 700 .28rem/.28rem "microsoft yahei";
+    color: #fff;
+    text-align: center;
+    margin-top: .55rem;
+    margin-bottom: .43rem;
+}
+.heib dd p {
+    font: 400 .22rem/.26rem "microsoft yahei";
+    color: #fff;
+    text-align: center;
+}
+
+/*m2*/
+.m2 {
+    width: 7.2rem;
+    height: 6.17rem;
+    background: url(../images/zgm2.jpg) no-repeat center;
+    -webkit-background-size: 7.2rem;
+    background-size: 7.2rem;
+}
+.m2 h2{
+    font: 700 .3rem/.3rem "microsoft yahei";
+    color: #fff;
+    text-align: left;
+    margin-left: .53rem;
+    padding-top: .16rem;
+    text-shadow: .03rem .03rem .02rem rgba(255,255,255,0.5);
+}
+.m2 h2 b{
+    display: inline-block;
+    width: 1.44rem;
+    height: .74rem;
+    box-sizing:border-box;
+    padding-left: .35rem;
+    font: 700 .3rem/.74rem "microsoft yahei";
+    color: #fff;
+    background: url(../images/tv.png) no-repeat center;
+    -webkit-background-size: 1.44rem;
+    background-size: 1.44rem;
+}
+.kcsm ,.msjm{
+    height: 1.27rem;
+    float: left;
+}
+.kcsm {
+    width: 4.8rem;
+    box-sizing:border-box;
+    padding-top: .7rem;
+    padding-left: .34rem;
+    font: 700 .3rem/.3rem "microsoft yahei";
+    color: #f6ccb4;
+    position: relative;
+}
+.kcsm span{
+    position: absolute;
+    width: .5rem;
+    height: .02rem;
+    background: #f6ccb4;
+    bottom: 0;
+    left: .65rem;
+}
+.msjm {
+    width: 2.4rem;
+}
+.msjm p{
+    font: 400 .3rem/.35rem "microsoft yahei";
+    color: #fff;
+    text-align: right;
+    position: relative;
+    margin-right: .26rem;
+}
+.msjm p span {
+    position: absolute;
+    width: .5rem;
+    height: .02rem;
+    background: #f6ccb4;
+    bottom: -.1rem;
+    right: .19rem;
+}
+.msjm a{
+    display: block;
+    width: 1.2rem;
+    height: .34rem;
+    color:#008e74;
+    font: 700 .21rem/.34rem "microsoft yahei";
+    text-align: center;
+    background: #f4e0d5;
+    border-radius: .17rem;
+    margin-top: .23rem;
+    margin-left: .9rem;
+}
+.m2 .xc {
+    color:#fff;
+    font: 400 .24rem/.28rem "microsoft yahei";
+    text-align: left;
+    margin-left: .19rem;
+    margin-right: .19rem;
+    margin-bottom: .19rem;
+}
+.m3 {
+    width: 7.2rem;
+    height: 6.32rem;
+    background: url(../images/zgm3.jpg) no-repeat center;
+    -webkit-background-size: 7.2rem;
+    background-size: 7.2rem;
+}
+.m3 h2{
+    font: 700 .3rem/.3rem "microsoft yahei";
+    color: #fff;
+    text-align: left;
+    margin-left: 3.28rem;
+    padding-top: 1rem;
+    text-shadow: .03rem .03rem .02rem rgba(255,255,255,0.5);
+}
+.m3 h2 b{
+    display: inline-block;
+    width: 1.44rem;
+    height: .74rem;
+    box-sizing:border-box;
+    padding-left: .35rem;
+    font: 700 .3rem/.74rem "microsoft yahei";
+    color: #fff;
+    background: url(../images/tv.png) no-repeat center;
+    -webkit-background-size: 1.44rem;
+    background-size: 1.44rem;
+}
+.baoxiang {
+    float: left;
+    width: 2.69rem;
+    height: 2.88rem;
+    background: url(../images/baoxiang.png) no-repeat;
+    -webkit-background-size: 2.69rem;
+    background-size: 2.69rem;
+    margin-left: .1rem;
+}
+.baoxiang a{
+    display: block;
+    width: 1.17rem;
+    height: .32rem;
+    border: 1px solid #fff;
+    background: transparent;
+    font: 700 .22rem/.32rem "microsoft yahei";
+    color: #fff;
+    text-align: center;
+    text-shadow: .03rem .05rem .1rem rgba(0,0,0,0.3);
+    border-radius: .16rem;
+    margin: 2.05rem auto 0;
+    transition: 0.3s;
+}
+.kaibaoxiang {
+    float: left;
+    width: 4.33rem;
+    height: 3.81rem;
+    background: url(../images/dkbaoxiang.png) no-repeat;
+    -webkit-background-size: 4.33rem;
+    background-size: 4.33rem;
+    margin-top: .43rem;
+}
+.zx {
+    font: 700 .24rem/.32rem "microsoft yahei";
+    color: #018d73;
+    padding-top: .65rem;
+    margin-left: .25rem;
+    margin-bottom: .6rem;
+    text-shadow: .03rem .05rem .1rem rgba(0,0,0,0.3);
+}
+.cx {
+    font: 400 .2rem/.26rem "microsoft yahei";
+    color: #000;
+    margin-left: .25rem;
+    margin-bottom: .1rem;
+    text-shadow: .03rem .05rem .1rem rgba(0,0,0,0.3);
+}
+.cv {
+    font: 400 .16rem/.16rem "microsoft yahei";
+    color: #3b3b3b;
+    margin-left: .25rem;
+    text-shadow: .03rem .05rem .1rem rgba(0,0,0,0.3);
+}
+
+.m4 {
+    width: 7.2rem;
+    height: 5.89rem;
+    background: url(../images/zgm4.jpg) no-repeat center;
+    -webkit-background-size: 7.2rem;
+    background-size: 7.2rem;
+}
+.m4 h2{
+    font: 700 .3rem/.3rem "microsoft yahei";
+    color: #fff;
+    text-align: left;
+    margin-left: 1.85rem;
+    padding-top: .4rem;
+    text-shadow: .03rem .03rem .02rem rgba(255,255,255,0.5);
+}
+.m4 h2 b{
+    display: inline-block;
+    width: 2.07rem;
+    height: .74rem;
+    box-sizing:border-box;
+    padding-left: .35rem;
+    font: 700 .3rem/.74rem "microsoft yahei";
+    color: #fff;
+    background: url(../images/vv.png) no-repeat center;
+    -webkit-background-size: 2.07rem;
+    background-size: 2.07rem;
+    margin-bottom: .34rem;
+}
+
+.table {
+    width: 7rem;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+}
+.table tr {
+
+}
+.table tr td{
+    font:400 .18rem "microsoft yahei";
+    color:#525252;
+    border-right:1px solid #000;
+}
+.table tr td p {
+    text-align: left;
+    padding-left: .05rem;
+}
+.table tr td a {
+    display: block;
+    width: .8rem;
+    height: .24rem;
+    border:1px solid #008e74;
+    font:400 .18rem/.24rem "microsoft yahei";
+    color:#008e74;
+    text-align: center;
+    text-shadow: .03rem .05rem .1rem rgba(0,124,116,0.3);
+    border-radius: .15rem;
+    margin: 0 auto;
+    margin-left: .02rem;
+    margin-right: .02rem;
+    transition: 0.3s
+}
+.table tr td a:hover {
+    color:#f2eadd;
+    background: #008e74;
+}
+.table tr td:last-child{
+    border-right:none;
+}
+.table tr {
+    border-bottom:1px solid #000;
+}
+.table tr:first-child {
+    border:none;
+}
+.table tr:last-child {
+    border:none;
+}
+.table tr th{
+    height: .46rem;
+    background: #f2d29e;
+    font:400 .16rem/.46rem "microsoft yahei";
+    color:#000;
+    text-shadow: .03rem .05rem .1rem rgba(0,0,0,0.3);
+}
+.table tr:nth-child(n) {
+    background: #eeece9;
+}
+.table tr:nth-child(2n) {
+    background: #f5f5f5;
+}
+
+
+.m5 {
+    width: 7.2rem;
+    height: 7.17rem;
+    background: url(../images/zgm5.jpg) no-repeat center;
+    -webkit-background-size: 7.2rem;
+    background-size: 7.2rem;
+    text-align: center;
+}
+.m5 h2{
+    font: 700 .3rem/.3rem "microsoft yahei";
+    color: #fff;
+    text-align: left;
+    margin-left: 1.85rem;
+    padding-top: .84rem;
+    margin-bottom: .2rem;
+    text-shadow: .03rem .03rem .02rem rgba(255,255,255,0.5);
+}
+.m5 h2 b{
+    display: inline-block;
+    width: 2.07rem;
+    height: .74rem;
+    box-sizing:border-box;
+    padding-left: .35rem;
+    font: 700 .3rem/.74rem "microsoft yahei";
+    color: #fff;
+    background: url(../images/vv.png) no-repeat center;
+    -webkit-background-size: 2.07rem;
+    background-size: 2.07rem;
+    margin-bottom: .34rem;
+}
+.zgm5dl {
+    height: 2.2rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.zgm5dl dd {
+    flex: 1;
+    height: 2.2rem;
+    text-align: center;
+}
+.zgm5dl dd img {
+    width: 1.87rem;
+    height: 1.87rem;
+    vertical-align: middle;
+}
+.zgm5dl dd p {
+    font:400 .22rem/.22rem "microsoft yahei";
+    color:#fff;
+    text-align: center;
+    text-shadow: .03rem .05rem .1rem rgba(0,0,0,0.3);
+    margin-top: .1rem;
+    letter-spacing: 2px;
+}
+.gogo {
+    font:400 .3rem/.3rem "microsoft yahei";
+    color:#fff;
+    text-align: center;
+    text-shadow: .03rem .05rem .1rem rgba(0,0,0,0.3);
+    letter-spacing: .04rem;
+    font-style: italic;
+    margin-top: .52rem;
+    margin-bottom: .3rem;
+    -webkit-animation:pointNote 2s linear 0s infinite both;
+  -moz-animation:pointNote 2s linear 0s infinite both;
+  -ms-animation:pointNote 2s linear 0s infinite both;
+  -o-animation:pointNote 2s linear 0s infinite both;
+  animation:pointNote 2s linear 0s infinite both;
+}
+.top {
+    width: 1.19rem;
+    vertical-align: middle;
+    cursor: pointer;
+    height: .7rem;
+    margin-top: -.5rem;
+}
+@keyframes pointNote {
+  0% {opacity: 1;}
+  40% {opacity: 1;}
+  48% {opacity: 0;}
+  54%{opacity: 0;}
+  60%{opacity: 1;}
+  100%{opacity: 1;}
+}
+
+
+
+
+
+.tan {
+    position: fixed;
+    left: 50%;
+    margin-left: -3.2rem;
+    top: 50%;
+    margin-top: -2.25rem;
+    width: 6.4rem;
+    height: 4.5rem;
+    background: url(../images/tan.jpg) no-repeat center;
+    -webkit-background-size: 6.4rem;
+    background-size: 6.4rem;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border-radius: .5rem;
+    box-shadow: .03rem 0px .1rem rgba(0,0,0,0.5);
+    text-align: center;
+    z-index: 9999;
+    display: none;
+}
+.momo {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 9998;
+    display: none;
+}
+.tanp {
+    font:700 .3rem/.38rem "microsoft yahei";
+    color:#fff;
+    text-align: center;
+    text-shadow: .03rem 0px .1rem rgba(0,0,0,0.3);
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+}
+.tanimg {
+    width: 1.87rem;
+    height: 1.87rem;
+    vertical-align: middle;
+    margin-bottom: .05rem;
+}
+.tans {
+    font:700 .2rem/.3rem "microsoft yahei";
+    color:#fff;
+    text-align: center;
+    margin-bottom: .1rem;
+    margin-top: .1rem;
+    text-shadow: .03rem 0px .1rem rgba(0,0,0,0.3);
+}
+.tan_zhu {
+    font:700 .16rem/.26rem "microsoft yahei";
+    color:#fff;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: .02rem;
+    text-shadow: .03rem 0px .1rem rgba(0,0,0,0.3);
+}
+.clss {
+    position: absolute;
+    width: .3rem;
+    height: .78rem;
+    background: url(../images/clss.png) no-repeat center;
+    -webkit-background-size: .3rem;
+    background-size: .3rem;
+    top: 0;
+    right: .2rem;
+    cursor: pointer;
+}
+
+
+
+.beat-char {
+     position: relative;
+}
+.zmp1.tit .beat-char{
+    font-size: .3rem;
+}
+h2 b .beat-char{
+    font-size: .3rem;
+    letter-spacing: .02rem;
+    margin: 0;
+    background: none;
+    display: inline-block;
+}
+.txt .beat-char{
+    font-size: .14rem;
+    letter-spacing: .02rem;
+    margin: 0;
+}
